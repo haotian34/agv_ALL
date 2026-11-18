@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local IDE / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Generated field calibration data and logs (not part of the source archive)
+handeye_data*.jsonl
+handeye_result*.json
+handeye_report*.txt
+handeye_validation_*.jsonl
+grasp_offset*.json
+pregrasp_dry_run_*.json
+grasp_lift_test_*.json
+camera_gripper_test_*.jsonl
+plane_results/
+plane_sessions/
+*_session*.jsonl
+*.log

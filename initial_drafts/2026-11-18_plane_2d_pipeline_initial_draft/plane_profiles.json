@@ -1,0 +1,20 @@
+{
+  "warehouse_raw_1": {
+    "result": "plane_results/warehouse_raw_1.json",
+    "z_teaching_required": true,
+    "standard_photo_description": "仓库第1行（warehouse_raw_1）使用仓库标准拍照 RPY，与 warehouse_raw_2 共享同一套仓库 RPY。",
+    "site_z_parameter": null
+  },
+  "warehouse_raw_2": {
+    "result": "plane_results/warehouse_raw_2.json",
+    "z_teaching_required": true,
+    "standard_photo_description": "仓库第2行（warehouse_raw_2）使用仓库标准拍照 RPY，与 warehouse_raw_1 共享同一套仓库 RPY。",
+    "site_z_parameter": null
+  },
+  "machine_finished_pick": {
+    "result": "plane_results/machine_finished_pick.json",
+    "z_teaching_required": true,
+    "standard_photo_description": "加工区（machine_finished_pick）使用独立的加工区标准拍照 RPY，不与仓库 RPY 共用。",
+    "site_z_parameter": null
+  }
+}
