@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+plane_sessions/
+plane_results/
