@@ -448,6 +448,10 @@ def run_acquisition(
 
 
 def main(argv=None) -> int:
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8")
+    if hasattr(sys.stderr, "reconfigure"):
+        sys.stderr.reconfigure(encoding="utf-8")
     parser = argparse.ArgumentParser(
         description="静态A4九点只读采集；所有移动仅由人员通过WebApp手动执行。"
     )
@@ -459,8 +463,6 @@ def main(argv=None) -> int:
     parser.add_argument("--outer-tolerance-mm", type=float, required=True)
     parser.add_argument("--resume", type=Path, help="保留并续采现有JSONL会话")
     arguments = parser.parse_args(argv)
-    if hasattr(sys.stdout, "reconfigure"):
-        sys.stdout.reconfigure(encoding="utf-8")
     try:
         _require_safety_confirmation()
         result, result_path, report_path = run_acquisition(
