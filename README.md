@@ -1,1 +1,18 @@
-IyBBR1ZfQUxMCgrmnKzku5PlupPlvZLmoaNBR1bpobnnm67nm7jlhbPku6PnoIHjgIIKCnwg55uu5b2VIHwg5Luj56CB5L2c55SoIHwKfC0tLXwtLS18CnwgYHBsYW5lX2NhbGlicmF0aW9uL2AgfCBBNOS5neeCueW5s+mdouagh+WumuOAgeS8muivneS/neWtmOOAgemdmeaAgeWumuS9jeWSjOaKpeWRiiB8CnwgYGluaXRpYWxfZHJhZnRzLzIwMjYtMTEtMThfaGFuZGV5ZV8zZF9waXBlbGluZV9pbml0aWFsX2RyYWZ0L2AgfCDkuInnu7TmiYvnnLzmoIflrprjgIHmipPlj5blgY/np7vjgIHpooTmipPlj5blkozmipPlj5bmtYvor5UgfAp8IGBpbml0aWFsX2RyYWZ0cy8yMDI2LTExLTE4X3BsYW5lXzJkX3BpcGVsaW5lX2luaXRpYWxfZHJhZnQvYCB8IOaXqeacn0E05Lmd54K55bmz6Z2i5qCH5a6a44CB6Z2Z5oCB5a6a5L2N5ZKM5oql5ZGKIHwKfCBgaW5pdGlhbF9kcmFmdHMvMjAyNi0xMS0xOF9jYW1lcmFfZ3JpcHBlcl9kaWFnbm9zdGljX2luaXRpYWxfZHJhZnQvYCB8IFJlYWxTZW5zZeebuOacuuS4juWkueeIquiBlOWQiOiviuaWrSB8CnwgYGluaXRpYWxfZHJhZnRzLzIwMjYtMTEtMTlfZ3JpcHBlcl9rZXlib2FyZF9jb250cm9sX2luaXRpYWxfZHJhZnQvYCB8IOWkueeIquWunuaXtumUruebmOW8gOWQiOaOp+WItiB8CnwgYGJfc2xvdF90YXNrcy9gIHwgRmFpcmlubyBC5qe95Lu75YqhMS/ku7vliqEy77ya54us56uL5pS+572u44CB5Y+W5Lu244CBTElO5aSN546w5LiO5a6J5YWo5pel5b+XIHwKCuebruW9leWRveWQjeagvOW8j++8mgoKYGBgdGV4dAppbml0aWFsX2RyYWZ0cy885pel5pyfPl8855So6YCUPl9pbml0aWFsX2RyYWZ0LwpgYGAK
+# AGV_ALL
+
+本仓库归档AGV项目相关代码。
+
+| 目录 | 代码作用 |
+|---|---|
+| `plane_calibration/` | A4九点平面标定、会话保存、静态定位和报告 |
+| `initial_drafts/2026-11-18_handeye_3d_pipeline_initial_draft/` | 三维手眼标定、抓取偏移、预抓取和抓取测试 |
+| `initial_drafts/2026-11-18_plane_2d_pipeline_initial_draft/` | 早期A4九点平面标定、静态定位和报告 |
+| `initial_drafts/2026-11-18_camera_gripper_diagnostic_initial_draft/` | RealSense相机与夹爪联合诊断 |
+| `initial_drafts/2026-11-19_gripper_keyboard_control_initial_draft/` | 夹爪实时键盘开合控制 |
+| `b_slot_tasks/` | Fairino B槽任务1/任务2：独立放置、取件、LIN复现与安全日志 |
+
+目录命名格式：
+
+```text
+initial_drafts/<日期>_<用途>_initial_draft/
+```

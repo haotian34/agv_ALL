@@ -1,1 +1,364 @@
-aW1wb3J0IHRlbXBmaWxlDQppbXBvcnQgdW5pdHRlc3QNCmZyb20gcGF0aGxpYiBpbXBvcnQgUGF0aA0KDQpmcm9tIHJ1bl9iX2N5Y2xlIGltcG9ydCAoDQogICAgQ3ljbGVFcnJvciwNCiAgICBHcmlwcGVyRmVlZGJhY2ssDQogICAgU25hcHNob3QsDQogICAgVGVhY2hpbmdQb2ludCwNCiAgICBleGVjdXRlX3Rhc2tfMiwNCiAgICBydW5fdGFzaywNCikNCg0KDQpQT0lOVF9EQVRBID0gew0KICAgICJBX21pZGRsZSI6ICgoMCwgMCwgMzAwLCAxODAsIDAsIDApLCAoMCwgMTAsIDIwLCAzMCwgNDAsIDUwKSksDQogICAgIkJfMWhpZ2giOiAoKDEwMCwgMCwgMjIwLCAxODAsIDAsIDApLCAoMTAsIDIwLCAzMCwgNDAsIDUwLCA2MCkpLA0KICAgICJCXzIiOiAoKDEwMCwgMCwgMTgwLCAxODAsIDAsIDMwKSwgKDEyLCAyMiwgMzIsIDQyLCA1MiwgNjIpKSwNCiAgICAiQl8zIjogKCgxMDAsIDAsIDE0MCwgMTgwLCAwLCA2MCksICgxNCwgMjQsIDM0LCA0NCwgNTQsIDY0KSksDQogICAgIkJfNGxvdyI6ICgoMTAwLCAwLCAxMDAsIDE4MCwgMCwgOTApLCAoMTYsIDI2LCAzNiwgNDYsIDU2LCA2NikpLA0KfQ0KUE9JTlRTID0gew0KICAgIG5hbWU6IFRlYWNoaW5nUG9pbnQobmFtZSwgdGNwLCBqb2ludHMsIDIsIDAsIDUwLCAwLCAoMCwgMCwgMCwgMCkpDQogICAgZm9yIG5hbWUsICh0Y3AsIGpvaW50cykgaW4gUE9JTlRfREFUQS5pdGVtcygpDQp9DQoNCg0KY2xhc3MgRmFrZVNlc3Npb246DQogICAgZGVmIF9faW5pdF9fKA0KICAgICAgICBzZWxmLA0KICAgICAgICBncmlwcGVyPSJvcGVuIiwNCiAgICAgICAgZ3JpcHBlcl9mYXVsdD0wLA0KICAgICAgICBncmlwcGVyX2FjdGl2ZT0yLA0KICAgICAgICBmZWVkYmFja19zdGF0dXNfb3ZlcnJpZGU9Tm9uZSwNCiAgICAgICAgY2xvc2VkX3Bvc2l0aW9uPTQwLA0KICAgICAgICBzbGlwX2FmdGVyX2V4dHJhY3Q9RmFsc2UsDQogICAgICAgIGNvbGxpc2lvbl9hZnRlcl9vcGVuPUZhbHNlLA0KICAgICk6DQogICAgICAgIHNlbGYuY3VycmVudCA9ICJBX21pZGRsZSINCiAgICAgICAgc2VsZi5ncmlwcGVyID0gZ3JpcHBlcg0KICAgICAgICBzZWxmLmdyaXBwZXJfZmF1bHQgPSBncmlwcGVyX2ZhdWx0DQogICAgICAgIHNlbGYuZ3JpcHBlcl9hY3RpdmUgPSBncmlwcGVyX2FjdGl2ZQ0KICAgICAgICBzZWxmLmZlZWRiYWNrX3N0YXR1c19vdmVycmlkZSA9IGZlZWRiYWNrX3N0YXR1c19vdmVycmlkZQ0KICAgICAgICBzZWxmLmNsb3NlZF9wb3NpdGlvbiA9IGNsb3NlZF9wb3NpdGlvbg0KICAgICAgICBzZWxmLnNsaXBfYWZ0ZXJfZXh0cmFjdCA9IHNsaXBfYWZ0ZXJfZXh0cmFjdA0KICAgICAgICBzZWxmLmNvbGxpc2lvbl9hZnRlcl9vcGVuID0gY29sbGlzaW9uX2FmdGVyX29wZW4NCiAgICAgICAgc2VsZi5jb2xsaXNpb25fc3RhdGUgPSAwDQogICAgICAgIHNlbGYubW92ZXMgPSBbXQ0KICAgICAgICBzZWxmLnNwZWVkcyA9IFtdDQogICAgICAgIHNlbGYuYWNjZWxlcmF0aW9ucyA9IFtdDQogICAgICAgIHNlbGYuZ2xvYmFsX3NwZWVkcyA9IFtdDQogICAgICAgIHNlbGYuZ3JpcF9mb3JjZXMgPSBbXQ0KICAgICAgICBzZWxmLmNvbW1hbmRzID0gW10NCiAgICAgICAgc2VsZi5zdG9wcyA9IDANCg0KICAgIGRlZiBzZXRfZ2xvYmFsX3NwZWVkKHNlbGYsIHNwZWVkKToNCiAgICAgICAgc2VsZi5nbG9iYWxfc3BlZWRzLmFwcGVuZChzcGVlZCkNCiAgICAgICAgcmV0dXJuIDANCg0KICAgIGRlZiBjb21tdW5pY2F0aW9uX29rKHNlbGYpOg0KICAgICAgICByZXR1cm4gVHJ1ZQ0KDQogICAgZGVmIHJlYWRfcG9pbnRzKHNlbGYsIG5hbWVzKToNCiAgICAgICAgcmV0dXJuIHtuYW1lOiBQT0lOVFNbbmFtZV0gZm9yIG5hbWUgaW4gbmFtZXN9DQoNCiAgICBkZWYgc25hcHNob3Qoc2VsZik6DQogICAgICAgIHBvaW50ID0gUE9JTlRTW3NlbGYuY3VycmVudF0NCiAgICAgICAgb3Blbl9tb2RlID0gc2VsZi5ncmlwcGVyID09ICJvcGVuIg0KICAgICAgICByZXR1cm4gU25hcHNob3QoDQogICAgICAgICAgICB0Y3A9cG9pbnQudGNwLA0KICAgICAgICAgICAgam9pbnRzPXBvaW50LmpvaW50cywNCiAgICAgICAgICAgIHRvb2xfaWQ9MiwNCiAgICAgICAgICAgIHdvYmpfaWQ9MCwNCiAgICAgICAgICAgIHJvYm90X3N0YXRlPTEsDQogICAgICAgICAgICByb2JvdF9tb2RlPTAsDQogICAgICAgICAgICBlbmFibGVkPVRydWUsDQogICAgICAgICAgICBtYWluX2NvZGU9MCwNCiAgICAgICAgICAgIHN1Yl9jb2RlPTAsDQogICAgICAgICAgICBlbWVyZ2VuY3lfc3RvcD0wLA0KICAgICAgICAgICAgc2FmZXR5X3N0b3AwPTAsDQogICAgICAgICAgICBzYWZldHlfc3RvcDE9MCwNCiAgICAgICAgICAgIG1vdGlvbl9kb25lPTEsDQogICAgICAgICAgICBxdWV1ZV9sZW49MCwNCiAgICAgICAgICAgIGdyaXBwZXJfZmF1bHQ9c2VsZi5ncmlwcGVyX2ZhdWx0LA0KICAgICAgICAgICAgZ3JpcHBlcl9hY3RpdmU9c2VsZi5ncmlwcGVyX2FjdGl2ZSwNCiAgICAgICAgICAgIGdyaXBwZXJfc3RhdHVzPTEgaWYgb3Blbl9tb2RlIGVsc2UgMiwNCiAgICAgICAgICAgIGdyaXBwZXJfcG9zaXRpb249NjAgaWYgb3Blbl9tb2RlIGVsc2Ugc2VsZi5jbG9zZWRfcG9zaXRpb24sDQogICAgICAgICAgICBncmlwcGVyX2N1cnJlbnQ9MjAsDQogICAgICAgICAgICB0Y3Bfc3BlZWQ9KDAsIDAsIDAsIDAsIDAsIDApLA0KICAgICAgICAgICAgam9pbnRfc3BlZWQ9KDAsIDAsIDAsIDAsIDAsIDApLA0KICAgICAgICAgICAgY29sbGlzaW9uX3N0YXRlPXNlbGYuY29sbGlzaW9uX3N0YXRlLA0KICAgICAgICApDQoNCiAgICBkZWYgbW92ZV9saW5lYXIoc2VsZiwgcG9pbnQsIHNwZWVkLCBhY2NlbGVyYXRpb249MTAwLjApOg0KICAgICAgICBzZWxmLm1vdmVzLmFwcGVuZChwb2ludC5uYW1lKQ0KICAgICAgICBzZWxmLnNwZWVkcy5hcHBlbmQoc3BlZWQpDQogICAgICAgIHNlbGYuYWNjZWxlcmF0aW9ucy5hcHBlbmQoYWNjZWxlcmF0aW9uKQ0KICAgICAgICBwcmV2aW91cyA9IHNlbGYuY3VycmVudA0KICAgICAgICBzZWxmLmN1cnJlbnQgPSBwb2ludC5uYW1lDQogICAgICAgIGlmICgNCiAgICAgICAgICAgIHNlbGYuc2xpcF9hZnRlcl9leHRyYWN0DQogICAgICAgICAgICBhbmQgcHJldmlvdXMgPT0gIkJfNGxvdyINCiAgICAgICAgICAgIGFuZCBwb2ludC5uYW1lID09ICJCXzMiDQogICAgICAgICAgICBhbmQgc2VsZi5ncmlwcGVyID09ICJjbG9zZSINCiAgICAgICAgKToNCiAgICAgICAgICAgIHNlbGYuZ3JpcHBlciA9ICJvcGVuIg0KICAgICAgICByZXR1cm4gMA0KDQogICAgZGVmIGdyaXBwZXJfZmVlZGJhY2soc2VsZik6DQogICAgICAgIG9wZW5fbW9kZSA9IHNlbGYuZ3JpcHBlciA9PSAib3BlbiINCiAgICAgICAgc3RhdHVzID0gc2VsZi5mZWVkYmFja19zdGF0dXNfb3ZlcnJpZGUNCiAgICAgICAgaWYgc3RhdHVzIGlzIE5vbmU6DQogICAgICAgICAgICBzdGF0dXMgPSAxIGlmIG9wZW5fbW9kZSBlbHNlIDINCiAgICAgICAgcmV0dXJuIEdyaXBwZXJGZWVkYmFjaygNCiAgICAgICAgICAgIHNlbGYuZ3JpcHBlcl9mYXVsdCwNCiAgICAgICAgICAgIHNlbGYuZ3JpcHBlcl9hY3RpdmUsDQogICAgICAgICAgICBzdGF0dXMsDQogICAgICAgICAgICA2MCBpZiBvcGVuX21vZGUgZWxzZSBzZWxmLmNsb3NlZF9wb3NpdGlvbiwNCiAgICAgICAgICAgIDIwLA0KICAgICAgICApDQoNCiAgICBkZWYgb3Blbl9ncmlwcGVyKHNlbGYpOg0KICAgICAgICBzZWxmLmNvbW1hbmRzLmFwcGVuZCgib3BlbiIpDQogICAgICAgIHNlbGYuZ3JpcHBlciA9ICJvcGVuIg0KICAgICAgICBpZiBzZWxmLmNvbGxpc2lvbl9hZnRlcl9vcGVuOg0KICAgICAgICAgICAgc2VsZi5jb2xsaXNpb25fc3RhdGUgPSAxDQogICAgICAgIHJldHVybiAwDQoNCiAgICBkZWYgY2xvc2VfZ3JpcHBlcihzZWxmLCBmb3JjZT02MC4wKToNCiAgICAgICAgc2VsZi5jb21tYW5kcy5hcHBlbmQoImNsb3NlIikNCiAgICAgICAgc2VsZi5ncmlwX2ZvcmNlcy5hcHBlbmQoZm9yY2UpDQogICAgICAgIHNlbGYuZ3JpcHBlciA9ICJjbG9zZSINCiAgICAgICAgcmV0dXJuIDANCg0KICAgIGRlZiBzdG9wX21vdGlvbihzZWxmKToNCiAgICAgICAgc2VsZi5zdG9wcyArPSAxDQogICAgICAgIHJldHVybiAwDQoNCg0KY2xhc3MgVGFza1Rlc3RzKHVuaXR0ZXN0LlRlc3RDYXNlKToNCiAgICBkZWYgcnVuX2Zha2VfdGFzayhzZWxmLCBzZXNzaW9uLCB0YXNrX251bWJlciwgKiprd2FyZ3MpOg0KICAgICAgICBub3cgPSBbMC4wXQ0KICAgICAgICBvdXRwdXQgPSBbXQ0KICAgICAgICB0ZW1wb3JhcnkgPSB0ZW1wZmlsZS5UZW1wb3JhcnlEaXJlY3RvcnkoKQ0KICAgICAgICBzZWxmLmFkZENsZWFudXAodGVtcG9yYXJ5LmNsZWFudXApDQogICAgICAgIHBhdGggPSBydW5fdGFzaygNCiAgICAgICAgICAgIHNlc3Npb24sDQogICAgICAgICAgICB0YXNrX251bWJlciwNCiAgICAgICAgICAgIG91dHB1dF9mbj1vdXRwdXQuYXBwZW5kLA0KICAgICAgICAgICAgc2xlZXBfZm49bGFtYmRhIHNlY29uZHM6IG5vdy5fX3NldGl0ZW1fXygwLCBub3dbMF0gKyBzZWNvbmRzKSwNCiAgICAgICAgICAgIGNsb2NrX2ZuPWxhbWJkYTogbm93WzBdLA0KICAgICAgICAgICAgbG9nX2Rpcj1QYXRoKHRlbXBvcmFyeS5uYW1lKSwNCiAgICAgICAgICAgICoqa3dhcmdzLA0KICAgICAgICApDQogICAgICAgIHJldHVybiBwYXRoLCBvdXRwdXQNCg0KICAgIGRlZiB0ZXN0X3Rhc2tfMl9waWNrX2lzX2luZGVwZW5kZW50X2FuZF9zdG9wc19hdF9hKHNlbGYpOg0KICAgICAgICBzZXNzaW9uID0gRmFrZVNlc3Npb24oZ3JpcHBlcj0ib3BlbiIsIGNsb3NlZF9wb3NpdGlvbj0wKQ0KICAgICAgICBwYXRoLCBfID0gc2VsZi5ydW5fZmFrZV90YXNrKHNlc3Npb24sIDIsIGV4dHJhY3RfYWNjZWxlcmF0aW9uPTIwLjApDQogICAgICAgIGV4cGVjdGVkID0gWyJCXzFoaWdoIiwgIkJfMyIsICJCXzRsb3ciLCAiQl8zIiwgIkJfMiIsICJCXzFoaWdoIiwgIkFfbWlkZGxlIl0NCiAgICAgICAgc2VsZi5hc3NlcnRFcXVhbChzZXNzaW9uLm1vdmVzLCBleHBlY3RlZCkNCiAgICAgICAgc2VsZi5hc3NlcnRFcXVhbChzZXNzaW9uLnNwZWVkcywgWzEwMC4wXSAqIGxlbihleHBlY3RlZCkpDQogICAgICAgIHNlbGYuYXNzZXJ0RXF1YWwoc2Vzc2lvbi5hY2NlbGVyYXRpb25zLCBbMTAwLjAsIDEwMC4wLCAxMDAuMCwgMjAuMCwgMTAwLjAsIDEwMC4wLCAxMDAuMF0pDQogICAgICAgIHNlbGYuYXNzZXJ0RXF1YWwoc2Vzc2lvbi5nbG9iYWxfc3BlZWRzLCBbMzAuMF0pDQogICAgICAgIHNlbGYuYXNzZXJ0RXF1YWwoc2Vzc2lvbi5jb21tYW5kcywgWyJjbG9zZSJdKQ0KICAgICAgICBzZWxmLmFzc2VydEVxdWFsKHNlc3Npb24uZ3JpcF9mb3JjZXMsIFs3MC4wXSkNCiAgICAgICAgc2VsZi5hc3NlcnRFcXVhbChzZXNzaW9uLmN1cnJlbnQsICJBX21pZGRsZSIpDQogICAgICAgIHNlbGYuYXNzZXJ0RXF1YWwoc2Vzc2lvbi5ncmlwcGVyLCAiY2xvc2UiKQ0KICAgICAgICBzZWxmLmFzc2VydEluKCJiX3Rhc2syXyIsIFBhdGgocGF0aCkubmFtZSkNCg0KICAgIGRlZiB0ZXN0X3Rhc2tfMV9wbGFjZV9pc19pbmRlcGVuZGVudF9hbmRfc3RvcHNfYXRfYShzZWxmKToNCiAgICAgICAgc2Vzc2lvbiA9IEZha2VTZXNzaW9uKGdyaXBwZXI9ImNsb3NlIikNCiAgICAgICAgcGF0aCwgb3V0cHV0ID0gc2VsZi5ydW5fZmFrZV90YXNrKHNlc3Npb24sIDEpDQogICAgICAgIGV4cGVjdGVkID0gWyJCXzFoaWdoIiwgIkJfMyIsICJCXzRsb3ciLCAiQl8zIiwgIkJfMiIsICJCXzFoaWdoIiwgIkFfbWlkZGxlIl0NCiAgICAgICAgc2VsZi5hc3NlcnRFcXVhbChzZXNzaW9uLm1vdmVzLCBleHBlY3RlZCkNCiAgICAgICAgc2VsZi5hc3NlcnRFcXVhbChzZXNzaW9uLnNwZWVkcywgWzEwMC4wXSAqIGxlbihleHBlY3RlZCkpDQogICAgICAgIHNlbGYuYXNzZXJ0RXF1YWwoc2Vzc2lvbi5hY2NlbGVyYXRpb25zLCBbMTAwLjBdICogbGVuKGV4cGVjdGVkKSkNCiAgICAgICAgc2VsZi5hc3NlcnRFcXVhbChzZXNzaW9uLmdsb2JhbF9zcGVlZHMsIFszMC4wXSkNCiAgICAgICAgc2VsZi5hc3NlcnRFcXVhbChzZXNzaW9uLmNvbW1hbmRzLCBbIm9wZW4iXSkNCiAgICAgICAgc2VsZi5hc3NlcnRFcXVhbChzZXNzaW9uLmdyaXBfZm9yY2VzLCBbXSkNCiAgICAgICAgc2VsZi5hc3NlcnRFcXVhbChzZXNzaW9uLmN1cnJlbnQsICJBX21pZGRsZSIpDQogICAgICAgIHNlbGYuYXNzZXJ0RXF1YWwoc2Vzc2lvbi5ncmlwcGVyLCAib3BlbiIpDQogICAgICAgIHNlbGYuYXNzZXJ0SW4oImJfdGFzazFfIiwgUGF0aChwYXRoKS5uYW1lKQ0KICAgICAgICBzZWxmLmFzc2VydFRydWUoYW55KCLku7vliqExIiBpbiBsaW5lIGFuZCAi55Sf5Lu25pS+5YWl55Sf5Lu25qe9IiBpbiBsaW5lIGZvciBsaW5lIGluIG91dHB1dCkpDQogICAgICAgIHNlbGYuYXNzZXJ0VHJ1ZShhbnkoIui1t+eCuSIgaW4gbGluZSBhbmQgIue7iOeCuSIgaW4gbGluZSBhbmQgIumihOacn+WkueeIqiIgaW4gbGluZSBmb3IgbGluZSBpbiBvdXRwdXQpKQ0KDQogICAgZGVmIHRlc3RfdGFza18yX3JlamVjdHNfY2xvc2VkX3N0YXJ0X2ltbWVkaWF0ZWx5X3dpdGhvdXRfbW90aW9uKHNlbGYpOg0KICAgICAgICBzZXNzaW9uID0gRmFrZVNlc3Npb24oZ3JpcHBlcj0iY2xvc2UiKQ0KICAgICAgICBub3cgPSBbMC4wXQ0KICAgICAgICB3aXRoIHRlbXBmaWxlLlRlbXBvcmFyeURpcmVjdG9yeSgpIGFzIHRlbXBvcmFyeToNCiAgICAgICAgICAgIHdpdGggc2VsZi5hc3NlcnRSYWlzZXNSZWdleChDeWNsZUVycm9yLCAi5Lu75YqhMi4q6ZyA6KaBLirlvKDlvIAiKToNCiAgICAgICAgICAgICAgICBydW5fdGFzaygNCiAgICAgICAgICAgICAgICAgICAgc2Vzc2lvbiwNCiAgICAgICAgICAgICAgICAgICAgMiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBvdXRwdXRfZm49bGFtYmRhIHRleHQ6IE5vbmUsDQogICAgICAgICAgICAgICAgICAgIHNsZWVwX2ZuPWxhbWJkYSBzZWNvbmRzOiBub3cuX19zZXRpdGVtX18oMCwgbm93WzBdICsgc2Vjb25kcyksDQogICAgICAgICAgICAgICAgICAgIGNsb2NrX2ZuPWxhbWJkYTogbm93WzBdLA0KICAgICAgICAgICAgICAgICAgICBsb2dfZGlyPVBhdGgodGVtcG9yYXJ5KSwNCiAgICAgICAgICAgICAgICApDQogICAgICAgIHNlbGYuYXNzZXJ0TGVzcyhub3dbMF0sIDMuMCkNCiAgICAgICAgc2VsZi5hc3NlcnRFcXVhbChzZXNzaW9uLm1vdmVzLCBbXSkNCiAgICAgICAgc2VsZi5hc3NlcnRFcXVhbChzZXNzaW9uLmNvbW1hbmRzLCBbXSkNCg0KICAgIGRlZiB0ZXN0X3Rhc2tfMV9yZWplY3RzX29wZW5fc3RhcnRfaW1tZWRpYXRlbHlfd2l0aG91dF9tb3Rpb24oc2VsZik6DQogICAgICAgIHNlc3Npb24gPSBGYWtlU2Vzc2lvbihncmlwcGVyPSJvcGVuIikNCiAgICAgICAgbm93ID0gWzAuMF0NCiAgICAgICAgd2l0aCB0ZW1wZmlsZS5UZW1wb3JhcnlEaXJlY3RvcnkoKSBhcyB0ZW1wb3Jhcnk6DQogICAgICAgICAgICB3aXRoIHNlbGYuYXNzZXJ0UmFpc2VzUmVnZXgoQ3ljbGVFcnJvciwgIuS7u+WKoTEuKumcgOimgS4q6Zet5ZCIIik6DQogICAgICAgICAgICAgICAgcnVuX3Rhc2soDQogICAgICAgICAgICAgICAgICAgIHNlc3Npb24sDQogICAgICAgICAgICAgICAgICAgIDEsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgb3V0cHV0X2ZuPWxhbWJkYSB0ZXh0OiBOb25lLA0KICAgICAgICAgICAgICAgICAgICBzbGVlcF9mbj1sYW1iZGEgc2Vjb25kczogbm93Ll9fc2V0aXRlbV9fKDAsIG5vd1swXSArIHNlY29uZHMpLA0KICAgICAgICAgICAgICAgICAgICBjbG9ja19mbj1sYW1iZGE6IG5vd1swXSwNCiAgICAgICAgICAgICAgICAgICAgbG9nX2Rpcj1QYXRoKHRlbXBvcmFyeSksDQogICAgICAgICAgICAgICAgKQ0KICAgICAgICBzZWxmLmFzc2VydExlc3Mobm93WzBdLCAzLjApDQogICAgICAgIHNlbGYuYXNzZXJ0RXF1YWwoc2Vzc2lvbi5tb3ZlcywgW10pDQogICAgICAgIHNlbGYuYXNzZXJ0RXF1YWwoc2Vzc2lvbi5jb21tYW5kcywgW10pDQoNCiAgICBkZWYgdGVzdF90YXNrXzFfYWNjZXB0c19jbG9zZWRfcG9zaXRpb25femVyb19mcm9tX3JlYWxfZ3JpcHBlcihzZWxmKToNCiAgICAgICAgc2Vzc2lvbiA9IEZha2VTZXNzaW9uKGdyaXBwZXI9ImNsb3NlIiwgY2xvc2VkX3Bvc2l0aW9uPTApDQogICAgICAgIHNlbGYucnVuX2Zha2VfdGFzayhzZXNzaW9uLCAxKQ0KICAgICAgICBzZWxmLmFzc2VydEVxdWFsKHNlc3Npb24uY3VycmVudCwgIkFfbWlkZGxlIikNCiAgICAgICAgc2VsZi5hc3NlcnRFcXVhbChzZXNzaW9uLmdyaXBwZXIsICJvcGVuIikNCiAgICAgICAgc2VsZi5hc3NlcnRFcXVhbChzZXNzaW9uLmNvbW1hbmRzLCBbIm9wZW4iXSkNCg0KICAgIGRlZiB0ZXN0X3Rhc2tfMl9jb21wbGV0ZXNfd2l0aG91dF9vcGVyYXRvcl9pbnB1dChzZWxmKToNCiAgICAgICAgc2Vzc2lvbiA9IEZha2VTZXNzaW9uKGdyaXBwZXI9Im9wZW4iKQ0KICAgICAgICBzZWxmLnJ1bl9mYWtlX3Rhc2soc2Vzc2lvbiwgMikNCiAgICAgICAgc2VsZi5hc3NlcnRFcXVhbChzZXNzaW9uLmN1cnJlbnQsICJBX21pZGRsZSIpDQogICAgICAgIHNlbGYuYXNzZXJ0RXF1YWwoc2Vzc2lvbi5ncmlwcGVyLCAiY2xvc2UiKQ0KDQogICAgZGVmIHRlc3RfdGFza18xX2NvbXBsZXRlc193aXRob3V0X29wZXJhdG9yX2lucHV0KHNlbGYpOg0KICAgICAgICBzZXNzaW9uID0gRmFrZVNlc3Npb24oZ3JpcHBlcj0iY2xvc2UiKQ0KICAgICAgICBzZWxmLnJ1bl9mYWtlX3Rhc2soc2Vzc2lvbiwgMSkNCiAgICAgICAgc2VsZi5hc3NlcnRFcXVhbChzZXNzaW9uLmN1cnJlbnQsICJBX21pZGRsZSIpDQogICAgICAgIHNlbGYuYXNzZXJ0RXF1YWwoc2Vzc2lvbi5ncmlwcGVyLCAib3BlbiIpDQogICAgICAgIHNlbGYuYXNzZXJ0RXF1YWwoc2Vzc2lvbi5jb21tYW5kcywgWyJvcGVuIl0pDQoNCiAgICBkZWYgdGVzdF90YXNrXzJfYWJvcnRzX2lmX3BhcnRfc2xpcHNfYWZ0ZXJfZmlyc3RfbGlmdChzZWxmKToNCiAgICAgICAgc2Vzc2lvbiA9IEZha2VTZXNzaW9uKGdyaXBwZXI9Im9wZW4iLCBzbGlwX2FmdGVyX2V4dHJhY3Q9VHJ1ZSkNCiAgICAgICAgbm93ID0gWzAuMF0NCiAgICAgICAgd2l0aCB0ZW1wZmlsZS5UZW1wb3JhcnlEaXJlY3RvcnkoKSBhcyB0ZW1wb3Jhcnk6DQogICAgICAgICAgICB3aXRoIHNlbGYuYXNzZXJ0UmFpc2VzUmVnZXgoQ3ljbGVFcnJvciwgIm5vIGxvbmdlciBjbG9zZWR8ZHJvcHBlZHzlpLnmjIEiKToNCiAgICAgICAgICAgICAgICBydW5fdGFzaygNCiAgICAgICAgICAgICAgICAgICAgc2Vzc2lvbiwNCiAgICAgICAgICAgICAgICAgICAgMiwNCiAgICAgICAgICAgICAgICAgICAgb3V0cHV0X2ZuPWxhbWJkYSB0ZXh0OiBOb25lLA0KICAgICAgICAgICAgICAgICAgICBzbGVlcF9mbj1sYW1iZGEgc2Vjb25kczogbm93Ll9fc2V0aXRlbV9fKDAsIG5vd1swXSArIHNlY29uZHMpLA0KICAgICAgICAgICAgICAgICAgICBjbG9ja19mbj1sYW1iZGE6IG5vd1swXSwNCiAgICAgICAgICAgICAgICAgICAgbG9nX2Rpcj1QYXRoKHRlbXBvcmFyeSksDQogICAgICAgICAgICAgICAgKQ0KICAgICAgICBzZWxmLmFzc2VydExlc3Mobm93WzBdLCAzLjApDQogICAgICAgIHNlbGYuYXNzZXJ0Tm90SW4oIkFfbWlkZGxlIiwgc2Vzc2lvbi5tb3ZlcykNCiAgICAgICAgc2VsZi5hc3NlcnRFcXVhbChzZXNzaW9uLmN1cnJlbnQsICJCXzMiKQ0KDQogICAgZGVmIHRlc3RfdGFza18xX2NvbGxpc2lvbl9hZnRlcl9vcGVuX2Jsb2Nrc19yZXR1cm4oc2VsZik6DQogICAgICAgIHNlc3Npb24gPSBGYWtlU2Vzc2lvbihncmlwcGVyPSJjbG9zZSIsIGNvbGxpc2lvbl9hZnRlcl9vcGVuPVRydWUpDQogICAgICAgIG5vdyA9IFswLjBdDQogICAgICAgIHdpdGggdGVtcGZpbGUuVGVtcG9yYXJ5RGlyZWN0b3J5KCkgYXMgdGVtcG9yYXJ5Og0KICAgICAgICAgICAgd2l0aCBzZWxmLmFzc2VydFJhaXNlc1JlZ2V4KEN5Y2xlRXJyb3IsICJjb2xsaXNpb24gc3RhdGUgaXMgYWN0aXZlIik6DQogICAgICAgICAgICAgICAgcnVuX3Rhc2soDQogICAgICAgICAgICAgICAgICAgIHNlc3Npb24sDQogICAgICAgICAgICAgICAgICAgIDEsDQogICAgICAgICAgICAgICAgICAgIG91dHB1dF9mbj1sYW1iZGEgdGV4dDogTm9uZSwNCiAgICAgICAgICAgICAgICAgICAgc2xlZXBfZm49bGFtYmRhIHNlY29uZHM6IG5vdy5fX3NldGl0ZW1fXygwLCBub3dbMF0gKyBzZWNvbmRzKSwNCiAgICAgICAgICAgICAgICAgICAgY2xvY2tfZm49bGFtYmRhOiBub3dbMF0sDQogICAgICAgICAgICAgICAgICAgIGxvZ19kaXI9UGF0aCh0ZW1wb3JhcnkpLA0KICAgICAgICAgICAgICAgICkNCiAgICAgICAgc2VsZi5hc3NlcnRFcXVhbChzZXNzaW9uLmN1cnJlbnQsICJCXzRsb3ciKQ0KICAgICAgICBzZWxmLmFzc2VydEVxdWFsKHNlc3Npb24uY29tbWFuZHMsIFsib3BlbiJdKQ0KICAgICAgICBzZWxmLmFzc2VydE5vdEluKCJBX21pZGRsZSIsIHNlc3Npb24ubW92ZXMpDQoNCiAgICBkZWYgdGVzdF9zZGtfc3RhbGVfZ3JpcHBlcl9mYXVsdF9hbmRfaW5hY3RpdmVfbWFza19kb19ub3RfYmxvY2soc2VsZik6DQogICAgICAgIHNlc3Npb24gPSBGYWtlU2Vzc2lvbigNCiAgICAgICAgICAgIGdyaXBwZXI9Im9wZW4iLA0KICAgICAgICAgICAgZ3JpcHBlcl9mYXVsdD0xLA0KICAgICAgICAgICAgZ3JpcHBlcl9hY3RpdmU9MCwNCiAgICAgICAgICAgIGZlZWRiYWNrX3N0YXR1c19vdmVycmlkZT0wLA0KICAgICAgICApDQogICAgICAgIHNlbGYucnVuX2Zha2VfdGFzayhzZXNzaW9uLCAyKQ0KICAgICAgICBzZWxmLmFzc2VydEVxdWFsKHNlc3Npb24uY29tbWFuZHMsIFsiY2xvc2UiXSkNCiAgICAgICAgc2VsZi5hc3NlcnRFcXVhbChzZXNzaW9uLmN1cnJlbnQsICJBX21pZGRsZSIpDQogICAgICAgIHNlbGYuYXNzZXJ0RXF1YWwoc2Vzc2lvbi5ncmlwcGVyLCAiY2xvc2UiKQ0KDQogICAgZGVmIHRlc3RfZ3JpcHBlcl9zdGF0dXNfZHJvcHBlZF9zdGlsbF9hYm9ydHNfYmVmb3JlX21vdGlvbihzZWxmKToNCiAgICAgICAgc2Vzc2lvbiA9IEZha2VTZXNzaW9uKGdyaXBwZXI9Im9wZW4iLCBmZWVkYmFja19zdGF0dXNfb3ZlcnJpZGU9MykNCiAgICAgICAgbm93ID0gWzAuMF0NCiAgICAgICAgd2l0aCB0ZW1wZmlsZS5UZW1wb3JhcnlEaXJlY3RvcnkoKSBhcyB0ZW1wb3Jhcnk6DQogICAgICAgICAgICB3aXRoIHNlbGYuYXNzZXJ0UmFpc2VzUmVnZXgoQ3ljbGVFcnJvciwgIuaOieiQveeKtuaAgTMiKToNCiAgICAgICAgICAgICAgICBydW5fdGFzaygNCiAgICAgICAgICAgICAgICAgICAgc2Vzc2lvbiwNCiAgICAgICAgICAgICAgICAgICAgMiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBvdXRwdXRfZm49bGFtYmRhIHRleHQ6IE5vbmUsDQogICAgICAgICAgICAgICAgICAgIHNsZWVwX2ZuPWxhbWJkYSBzZWNvbmRzOiBub3cuX19zZXRpdGVtX18oMCwgbm93WzBdICsgc2Vjb25kcyksDQogICAgICAgICAgICAgICAgICAgIGNsb2NrX2ZuPWxhbWJkYTogbm93WzBdLA0KICAgICAgICAgICAgICAgICAgICBsb2dfZGlyPVBhdGgodGVtcG9yYXJ5KSwNCiAgICAgICAgICAgICAgICApDQogICAgICAgIHNlbGYuYXNzZXJ0RXF1YWwoc2Vzc2lvbi5tb3ZlcywgW10pDQogICAgICAgIHNlbGYuYXNzZXJ0RXF1YWwoc2Vzc2lvbi5jb21tYW5kcywgW10pDQoNCiAgICBkZWYgdGVzdF9leHRyYWN0X3NwZWVkX291dF9vZl9yYW5nZV9pc19yZWplY3RlZChzZWxmKToNCiAgICAgICAgc2Vzc2lvbiA9IEZha2VTZXNzaW9uKGdyaXBwZXI9Im9wZW4iKQ0KICAgICAgICB3aXRoIHRlbXBmaWxlLlRlbXBvcmFyeURpcmVjdG9yeSgpIGFzIHRlbXBvcmFyeToNCiAgICAgICAgICAgIHdpdGggc2VsZi5hc3NlcnRSYWlzZXNSZWdleChDeWNsZUVycm9yLCAiZXh0cmFjdCBzcGVlZCIpOg0KICAgICAgICAgICAgICAgIHJ1bl90YXNrKA0KICAgICAgICAgICAgICAgICAgICBzZXNzaW9uLA0KICAgICAgICAgICAgICAgICAgICAyLA0KICAgICAgICAgICAgICAgICAgICBleHRyYWN0X3NwZWVkPTAuMCwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBvdXRwdXRfZm49bGFtYmRhIHRleHQ6IE5vbmUsDQogICAgICAgICAgICAgICAgICAgIHNsZWVwX2ZuPWxhbWJkYSBzZWNvbmRzOiBOb25lLA0KICAgICAgICAgICAgICAgICAgICBjbG9ja19mbj1sYW1iZGE6IDAuMCwNCiAgICAgICAgICAgICAgICAgICAgbG9nX2Rpcj1QYXRoKHRlbXBvcmFyeSksDQogICAgICAgICAgICAgICAgKQ0KICAgICAgICBzZWxmLmFzc2VydEVxdWFsKHNlc3Npb24ubW92ZXMsIFtdKQ0KDQogICAgZGVmIHRlc3RfZ3JpcF9mb3JjZV9vdXRfb2ZfcmFuZ2VfaXNfcmVqZWN0ZWQoc2VsZik6DQogICAgICAgIHNlc3Npb24gPSBGYWtlU2Vzc2lvbihncmlwcGVyPSJvcGVuIikNCiAgICAgICAgd2l0aCB0ZW1wZmlsZS5UZW1wb3JhcnlEaXJlY3RvcnkoKSBhcyB0ZW1wb3Jhcnk6DQogICAgICAgICAgICB3aXRoIHNlbGYuYXNzZXJ0UmFpc2VzUmVnZXgoQ3ljbGVFcnJvciwgImdyaXAgZm9yY2UiKToNCiAgICAgICAgICAgICAgICBydW5fdGFzaygNCiAgICAgICAgICAgICAgICAgICAgc2Vzc2lvbiwNCiAgICAgICAgICAgICAgICAgICAgMiwNCiAgICAgICAgICAgICAgICAgICAgZ3JpcF9mb3JjZT0wLjAsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgb3V0cHV0X2ZuPWxhbWJkYSB0ZXh0OiBOb25lLA0KICAgICAgICAgICAgICAgICAgICBzbGVlcF9mbj1sYW1iZGEgc2Vjb25kczogTm9uZSwNCiAgICAgICAgICAgICAgICAgICAgY2xvY2tfZm49bGFtYmRhOiAwLjAsDQogICAgICAgICAgICAgICAgICAgIGxvZ19kaXI9UGF0aCh0ZW1wb3JhcnkpLA0KICAgICAgICAgICAgICAgICkNCiAgICAgICAgc2VsZi5hc3NlcnRFcXVhbChzZXNzaW9uLm1vdmVzLCBbXSkNCg0KICAgIGRlZiB0ZXN0X3NpZ25hbF9lbnRyeXBvaW50X3N0b3BzX21vdGlvbl9vbl93cm9uZ190YXNrX3N0YXRlKHNlbGYpOg0KICAgICAgICBzZXNzaW9uID0gRmFrZVNlc3Npb24oZ3JpcHBlcj0iY2xvc2UiKQ0KICAgICAgICBub3cgPSBbMC4wXQ0KICAgICAgICB3aXRoIHRlbXBmaWxlLlRlbXBvcmFyeURpcmVjdG9yeSgpIGFzIHRlbXBvcmFyeToNCiAgICAgICAgICAgIHdpdGggc2VsZi5hc3NlcnRSYWlzZXNSZWdleChDeWNsZUVycm9yLCAi5Lu75YqhMi4q6ZyA6KaBLirlvKDlvIAiKToNCiAgICAgICAgICAgICAgICBleGVjdXRlX3Rhc2tfMigNCiAgICAgICAgICAgICAgICAgICAgc2Vzc2lvbiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBvdXRwdXRfZm49bGFtYmRhIHRleHQ6IE5vbmUsDQogICAgICAgICAgICAgICAgICAgIHNsZWVwX2ZuPWxhbWJkYSBzZWNvbmRzOiBub3cuX19zZXRpdGVtX18oMCwgbm93WzBdICsgc2Vjb25kcyksDQogICAgICAgICAgICAgICAgICAgIGNsb2NrX2ZuPWxhbWJkYTogbm93WzBdLA0KICAgICAgICAgICAgICAgICAgICBsb2dfZGlyPVBhdGgodGVtcG9yYXJ5KSwNCiAgICAgICAgICAgICAgICApDQogICAgICAgIHNlbGYuYXNzZXJ0RXF1YWwoc2Vzc2lvbi5zdG9wcywgMSkNCiAgICAgICAgc2VsZi5hc3NlcnRFcXVhbChzZXNzaW9uLm1vdmVzLCBbXSkNCg0KICAgIGRlZiB0ZXN0X2ludmFsaWRfdGFza19udW1iZXJfaXNfcmVqZWN0ZWQoc2VsZik6DQogICAgICAgIHNlc3Npb24gPSBGYWtlU2Vzc2lvbigpDQogICAgICAgIHdpdGggdGVtcGZpbGUuVGVtcG9yYXJ5RGlyZWN0b3J5KCkgYXMgdGVtcG9yYXJ5Og0KICAgICAgICAgICAgd2l0aCBzZWxmLmFzc2VydFJhaXNlc1JlZ2V4KEN5Y2xlRXJyb3IsICJ0YXNrIG51bWJlciIpOg0KICAgICAgICAgICAgICAgIHJ1bl90YXNrKA0KICAgICAgICAgICAgICAgICAgICBzZXNzaW9uLA0KICAgICAgICAgICAgICAgICAgICAzLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIG91dHB1dF9mbj1sYW1iZGEgdGV4dDogTm9uZSwNCiAgICAgICAgICAgICAgICAgICAgc2xlZXBfZm49bGFtYmRhIHNlY29uZHM6IE5vbmUsDQogICAgICAgICAgICAgICAgICAgIGNsb2NrX2ZuPWxhbWJkYTogMC4wLA0KICAgICAgICAgICAgICAgICAgICBsb2dfZGlyPVBhdGgodGVtcG9yYXJ5KSwNCiAgICAgICAgICAgICAgICApDQogICAgICAgIHNlbGYuYXNzZXJ0RXF1YWwoc2Vzc2lvbi5tb3ZlcywgW10pDQoNCg0KaWYgX19uYW1lX18gPT0gIl9fbWFpbl9fIjoNCiAgICB1bml0dGVzdC5tYWluKCkNCg==
+import tempfile
+import unittest
+from pathlib import Path
+
+from run_b_cycle import (
+    CycleError,
+    GripperFeedback,
+    Snapshot,
+    TeachingPoint,
+    execute_task_2,
+    run_task,
+)
+
+
+POINT_DATA = {
+    "A_middle": ((0, 0, 300, 180, 0, 0), (0, 10, 20, 30, 40, 50)),
+    "B_1high": ((100, 0, 220, 180, 0, 0), (10, 20, 30, 40, 50, 60)),
+    "B_2": ((100, 0, 180, 180, 0, 30), (12, 22, 32, 42, 52, 62)),
+    "B_3": ((100, 0, 140, 180, 0, 60), (14, 24, 34, 44, 54, 64)),
+    "B_4low": ((100, 0, 100, 180, 0, 90), (16, 26, 36, 46, 56, 66)),
+}
+POINTS = {
+    name: TeachingPoint(name, tcp, joints, 2, 0, 50, 0, (0, 0, 0, 0))
+    for name, (tcp, joints) in POINT_DATA.items()
+}
+
+
+class FakeSession:
+    def __init__(
+        self,
+        gripper="open",
+        gripper_fault=0,
+        gripper_active=2,
+        feedback_status_override=None,
+        closed_position=40,
+        slip_after_extract=False,
+        collision_after_open=False,
+    ):
+        self.current = "A_middle"
+        self.gripper = gripper
+        self.gripper_fault = gripper_fault
+        self.gripper_active = gripper_active
+        self.feedback_status_override = feedback_status_override
+        self.closed_position = closed_position
+        self.slip_after_extract = slip_after_extract
+        self.collision_after_open = collision_after_open
+        self.collision_state = 0
+        self.moves = []
+        self.speeds = []
+        self.accelerations = []
+        self.global_speeds = []
+        self.grip_forces = []
+        self.commands = []
+        self.stops = 0
+
+    def set_global_speed(self, speed):
+        self.global_speeds.append(speed)
+        return 0
+
+    def communication_ok(self):
+        return True
+
+    def read_points(self, names):
+        return {name: POINTS[name] for name in names}
+
+    def snapshot(self):
+        point = POINTS[self.current]
+        open_mode = self.gripper == "open"
+        return Snapshot(
+            tcp=point.tcp,
+            joints=point.joints,
+            tool_id=2,
+            wobj_id=0,
+            robot_state=1,
+            robot_mode=0,
+            enabled=True,
+            main_code=0,
+            sub_code=0,
+            emergency_stop=0,
+            safety_stop0=0,
+            safety_stop1=0,
+            motion_done=1,
+            queue_len=0,
+            gripper_fault=self.gripper_fault,
+            gripper_active=self.gripper_active,
+            gripper_status=1 if open_mode else 2,
+            gripper_position=60 if open_mode else self.closed_position,
+            gripper_current=20,
+            tcp_speed=(0, 0, 0, 0, 0, 0),
+            joint_speed=(0, 0, 0, 0, 0, 0),
+            collision_state=self.collision_state,
+        )
+
+    def move_linear(self, point, speed, acceleration=100.0):
+        self.moves.append(point.name)
+        self.speeds.append(speed)
+        self.accelerations.append(acceleration)
+        previous = self.current
+        self.current = point.name
+        if (
+            self.slip_after_extract
+            and previous == "B_4low"
+            and point.name == "B_3"
+            and self.gripper == "close"
+        ):
+            self.gripper = "open"
+        return 0
+
+    def gripper_feedback(self):
+        open_mode = self.gripper == "open"
+        status = self.feedback_status_override
+        if status is None:
+            status = 1 if open_mode else 2
+        return GripperFeedback(
+            self.gripper_fault,
+            self.gripper_active,
+            status,
+            60 if open_mode else self.closed_position,
+            20,
+        )
+
+    def open_gripper(self):
+        self.commands.append("open")
+        self.gripper = "open"
+        if self.collision_after_open:
+            self.collision_state = 1
+        return 0
+
+    def close_gripper(self, force=60.0):
+        self.commands.append("close")
+        self.grip_forces.append(force)
+        self.gripper = "close"
+        return 0
+
+    def stop_motion(self):
+        self.stops += 1
+        return 0
+
+
+class TaskTests(unittest.TestCase):
+    def run_fake_task(self, session, task_number, **kwargs):
+        now = [0.0]
+        output = []
+        temporary = tempfile.TemporaryDirectory()
+        self.addCleanup(temporary.cleanup)
+        path = run_task(
+            session,
+            task_number,
+            output_fn=output.append,
+            sleep_fn=lambda seconds: now.__setitem__(0, now[0] + seconds),
+            clock_fn=lambda: now[0],
+            log_dir=Path(temporary.name),
+            **kwargs,
+        )
+        return path, output
+
+    def test_task_2_pick_is_independent_and_stops_at_a(self):
+        session = FakeSession(gripper="open", closed_position=0)
+        path, _ = self.run_fake_task(session, 2, extract_acceleration=20.0)
+        expected = ["B_1high", "B_3", "B_4low", "B_3", "B_2", "B_1high", "A_middle"]
+        self.assertEqual(session.moves, expected)
+        self.assertEqual(session.speeds, [100.0] * len(expected))
+        self.assertEqual(session.accelerations, [100.0, 100.0, 100.0, 20.0, 100.0, 100.0, 100.0])
+        self.assertEqual(session.global_speeds, [30.0])
+        self.assertEqual(session.commands, ["close"])
+        self.assertEqual(session.grip_forces, [70.0])
+        self.assertEqual(session.current, "A_middle")
+        self.assertEqual(session.gripper, "close")
+        self.assertIn("b_task2_", Path(path).name)
+
+    def test_task_1_place_is_independent_and_stops_at_a(self):
+        session = FakeSession(gripper="close")
+        path, output = self.run_fake_task(session, 1)
+        expected = ["B_1high", "B_3", "B_4low", "B_3", "B_2", "B_1high", "A_middle"]
+        self.assertEqual(session.moves, expected)
+        self.assertEqual(session.speeds, [100.0] * len(expected))
+        self.assertEqual(session.accelerations, [100.0] * len(expected))
+        self.assertEqual(session.global_speeds, [30.0])
+        self.assertEqual(session.commands, ["open"])
+        self.assertEqual(session.grip_forces, [])
+        self.assertEqual(session.current, "A_middle")
+        self.assertEqual(session.gripper, "open")
+        self.assertIn("b_task1_", Path(path).name)
+        self.assertTrue(any("任务1" in line and "生件放入生件槽" in line for line in output))
+        self.assertTrue(any("起点" in line and "终点" in line and "预期夹爪" in line for line in output))
+
+    def test_task_2_rejects_closed_start_immediately_without_motion(self):
+        session = FakeSession(gripper="close")
+        now = [0.0]
+        with tempfile.TemporaryDirectory() as temporary:
+            with self.assertRaisesRegex(CycleError, "任务2.*需要.*张开"):
+                run_task(
+                    session,
+                    2,
+                            output_fn=lambda text: None,
+                    sleep_fn=lambda seconds: now.__setitem__(0, now[0] + seconds),
+                    clock_fn=lambda: now[0],
+                    log_dir=Path(temporary),
+                )
+        self.assertLess(now[0], 3.0)
+        self.assertEqual(session.moves, [])
+        self.assertEqual(session.commands, [])
+
+    def test_task_1_rejects_open_start_immediately_without_motion(self):
+        session = FakeSession(gripper="open")
+        now = [0.0]
+        with tempfile.TemporaryDirectory() as temporary:
+            with self.assertRaisesRegex(CycleError, "任务1.*需要.*闭合"):
+                run_task(
+                    session,
+                    1,
+                            output_fn=lambda text: None,
+                    sleep_fn=lambda seconds: now.__setitem__(0, now[0] + seconds),
+                    clock_fn=lambda: now[0],
+                    log_dir=Path(temporary),
+                )
+        self.assertLess(now[0], 3.0)
+        self.assertEqual(session.moves, [])
+        self.assertEqual(session.commands, [])
+
+    def test_task_1_accepts_closed_position_zero_from_real_gripper(self):
+        session = FakeSession(gripper="close", closed_position=0)
+        self.run_fake_task(session, 1)
+        self.assertEqual(session.current, "A_middle")
+        self.assertEqual(session.gripper, "open")
+        self.assertEqual(session.commands, ["open"])
+
+    def test_task_2_completes_without_operator_input(self):
+        session = FakeSession(gripper="open")
+        self.run_fake_task(session, 2)
+        self.assertEqual(session.current, "A_middle")
+        self.assertEqual(session.gripper, "close")
+
+    def test_task_1_completes_without_operator_input(self):
+        session = FakeSession(gripper="close")
+        self.run_fake_task(session, 1)
+        self.assertEqual(session.current, "A_middle")
+        self.assertEqual(session.gripper, "open")
+        self.assertEqual(session.commands, ["open"])
+
+    def test_task_2_aborts_if_part_slips_after_first_lift(self):
+        session = FakeSession(gripper="open", slip_after_extract=True)
+        now = [0.0]
+        with tempfile.TemporaryDirectory() as temporary:
+            with self.assertRaisesRegex(CycleError, "no longer closed|dropped|夹持"):
+                run_task(
+                    session,
+                    2,
+                    output_fn=lambda text: None,
+                    sleep_fn=lambda seconds: now.__setitem__(0, now[0] + seconds),
+                    clock_fn=lambda: now[0],
+                    log_dir=Path(temporary),
+                )
+        self.assertLess(now[0], 3.0)
+        self.assertNotIn("A_middle", session.moves)
+        self.assertEqual(session.current, "B_3")
+
+    def test_task_1_collision_after_open_blocks_return(self):
+        session = FakeSession(gripper="close", collision_after_open=True)
+        now = [0.0]
+        with tempfile.TemporaryDirectory() as temporary:
+            with self.assertRaisesRegex(CycleError, "collision state is active"):
+                run_task(
+                    session,
+                    1,
+                    output_fn=lambda text: None,
+                    sleep_fn=lambda seconds: now.__setitem__(0, now[0] + seconds),
+                    clock_fn=lambda: now[0],
+                    log_dir=Path(temporary),
+                )
+        self.assertEqual(session.current, "B_4low")
+        self.assertEqual(session.commands, ["open"])
+        self.assertNotIn("A_middle", session.moves)
+
+    def test_sdk_stale_gripper_fault_and_inactive_mask_do_not_block(self):
+        session = FakeSession(
+            gripper="open",
+            gripper_fault=1,
+            gripper_active=0,
+            feedback_status_override=0,
+        )
+        self.run_fake_task(session, 2)
+        self.assertEqual(session.commands, ["close"])
+        self.assertEqual(session.current, "A_middle")
+        self.assertEqual(session.gripper, "close")
+
+    def test_gripper_status_dropped_still_aborts_before_motion(self):
+        session = FakeSession(gripper="open", feedback_status_override=3)
+        now = [0.0]
+        with tempfile.TemporaryDirectory() as temporary:
+            with self.assertRaisesRegex(CycleError, "掉落状态3"):
+                run_task(
+                    session,
+                    2,
+                            output_fn=lambda text: None,
+                    sleep_fn=lambda seconds: now.__setitem__(0, now[0] + seconds),
+                    clock_fn=lambda: now[0],
+                    log_dir=Path(temporary),
+                )
+        self.assertEqual(session.moves, [])
+        self.assertEqual(session.commands, [])
+
+    def test_extract_speed_out_of_range_is_rejected(self):
+        session = FakeSession(gripper="open")
+        with tempfile.TemporaryDirectory() as temporary:
+            with self.assertRaisesRegex(CycleError, "extract speed"):
+                run_task(
+                    session,
+                    2,
+                    extract_speed=0.0,
+                            output_fn=lambda text: None,
+                    sleep_fn=lambda seconds: None,
+                    clock_fn=lambda: 0.0,
+                    log_dir=Path(temporary),
+                )
+        self.assertEqual(session.moves, [])
+
+    def test_grip_force_out_of_range_is_rejected(self):
+        session = FakeSession(gripper="open")
+        with tempfile.TemporaryDirectory() as temporary:
+            with self.assertRaisesRegex(CycleError, "grip force"):
+                run_task(
+                    session,
+                    2,
+                    grip_force=0.0,
+                            output_fn=lambda text: None,
+                    sleep_fn=lambda seconds: None,
+                    clock_fn=lambda: 0.0,
+                    log_dir=Path(temporary),
+                )
+        self.assertEqual(session.moves, [])
+
+    def test_signal_entrypoint_stops_motion_on_wrong_task_state(self):
+        session = FakeSession(gripper="close")
+        now = [0.0]
+        with tempfile.TemporaryDirectory() as temporary:
+            with self.assertRaisesRegex(CycleError, "任务2.*需要.*张开"):
+                execute_task_2(
+                    session,
+                            output_fn=lambda text: None,
+                    sleep_fn=lambda seconds: now.__setitem__(0, now[0] + seconds),
+                    clock_fn=lambda: now[0],
+                    log_dir=Path(temporary),
+                )
+        self.assertEqual(session.stops, 1)
+        self.assertEqual(session.moves, [])
+
+    def test_invalid_task_number_is_rejected(self):
+        session = FakeSession()
+        with tempfile.TemporaryDirectory() as temporary:
+            with self.assertRaisesRegex(CycleError, "task number"):
+                run_task(
+                    session,
+                    3,
+                            output_fn=lambda text: None,
+                    sleep_fn=lambda seconds: None,
+                    clock_fn=lambda: 0.0,
+                    log_dir=Path(temporary),
+                )
+        self.assertEqual(session.moves, [])
+
+
+if __name__ == "__main__":
+    unittest.main()

@@ -1,1 +1,11 @@
-IyAtKi0gY29kaW5nOiB1dGYtOCAtKi0KIiIiU3RhbmRhbG9uZSBGYWlyaW5vIEItc2xvdCBUYXNrIDIgZW50cnkgcG9pbnQuCgpUYXNrIDI6IEFfbWlkZGxlIGVtcHR5L29wZW4gLT4gQl80bG93IHBpY2sgLT4gcmV0dXJuIEFfbWlkZGxlIGhvbGRpbmcuCiIiIgoKZnJvbSBydW5fYl9jeWNsZSBpbXBvcnQgbWFpbgoKCmlmIF9fbmFtZV9fID09ICJfX21haW5fXyI6CiAgICByYWlzZSBTeXN0ZW1FeGl0KG1haW4oZGVmYXVsdF90YXNrPTIpKQ0K
+# -*- coding: utf-8 -*-
+"""Standalone Fairino B-slot Task 2 entry point.
+
+Task 2: A_middle empty/open -> B_4low pick -> return A_middle holding.
+"""
+
+from run_b_cycle import main
+
+
+if __name__ == "__main__":
+    raise SystemExit(main(default_task=2))

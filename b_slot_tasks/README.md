@@ -1,1 +1,80 @@
-IyBGYWlyaW5vIELmp73ku7vliqExL+S7u+WKoTIKCkZhaXJpbm8g5py65qKw6IeCIEIg5qe95Zu65a6a54K55L2NIExJTiDmkKzov5DnqIvluo/jgILnqIvluo/nm7TmjqXor7vlj5YgV2ViQXBwIOW9k+WJjeekuuaVmeeCue+8mgoKYGBgdGV4dApBX21pZGRsZQpCXzFoaWdoCkJfMwpCXzRsb3cKQl8yCmBgYAoKIyMg5Lik5Liq54us56uL56iL5bqPCgp8IOaWh+S7tiB8IOS9nOeUqCB8IOi1t+eCuSB8IOe7iOeCuSB8CnwtLS18LS0tfC0tLXwtLS18CnwgYHJ1bl90YXNrMS5weWAgfCDnlJ/ku7bmlL7lhaXnlJ/ku7bmp70gfCBBX21pZGRsZe+8jOWkueeIqumXreWQiOWkueaMgSB8IEFfbWlkZGxl77yM5aS554iq5byg5byAIHwKfCBgcnVuX3Rhc2syLnB5YCB8IOS7jueUn+S7tuanveWPluWHuuW3peS7tiB8IEFfbWlkZGxl77yM5aS554iq5byg5byAIHwgQV9taWRkbGXvvIzlpLnniKrpl63lkIjlpLnmjIEgfAoK5q+P5qyh6L+Q6KGM5Y+q5omn6KGM5LiA5Liq5Lu75Yqh77yM57uT5p2f5ZCO5YGc5ZyoIGBBX21pZGRsZWDvvIzkuI3kvJroh6rliqjmiafooYzkuIvkuIDku7vliqHjgIIKCiMjIOaJi+WKqOi/kOihjAoKYGBgcG93ZXJzaGVsbApjZCBDOlxVc2Vyc1xBZG1pblxEZXNrdG9wXOeOsOWcuuiwg+ivleiEmuacrApEOlxhbmFjb25kYTNcZW52c1xhZ3ZccHl0aG9uLmV4ZSBydW5fdGFzazEucHkgLS1zZGstcm9vdCBDOlxVc2Vyc1xBZG1pblxEZXNrdG9wXOeOsOWcuuiwg+ivleiEmuacrApgYGAKCmBgYHBvd2Vyc2hlbGwKRDpcYW5hY29uZGEzXGVudnNcYWd2XHB5dGhvbi5leGUgcnVuX3Rhc2syLnB5IC0tc2RrLXJvb3QgQzpcVXNlcnNcQWRtaW5cRGVza3RvcFznjrDlnLrosIPor5XohJrmnKwKYGBgCgrkuZ/lj6/ku6Xkvb/nlKjluKbku7vliqHpgInmi6nnmoTmgLvlhaXlj6PvvJoKCmBgYHBvd2Vyc2hlbGwKRDpcYW5hY29uZGEzXGVudnNcYWd2XHB5dGhvbi5leGUgcnVuX2JfY3ljbGUucHkgLS10YXNrIDEgLS1zZGstcm9vdCBDOlxVc2Vyc1xBZG1pblxEZXNrdG9wXOeOsOWcuuiwg+ivleiEmuacrApEOlxhbmFjb25kYTNcZW52c1xhZ3ZccHl0aG9uLmV4ZSBydW5fYl9jeWNsZS5weSAtLXRhc2sgMiAtLXNkay1yb290IEM6XFVzZXJzXEFkbWluXERlc2t0b3Bc546w5Zy66LCD6K+V6ISa5pysCmBgYAoKIyMg5L+h5Y+36LCD55SoCgrlkI7nu63kv6Hlj7fmjqfliLbns7vnu5/lj6/ku6Xnm7TmjqXlpI3nlKjmoLjlv4Plh73mlbDvvJoKCmBgYHB5dGhvbgpmcm9tIHJ1bl9iX2N5Y2xlIGltcG9ydCBGYWlyaW5vU2Vzc2lvbiwgZXhlY3V0ZV90YXNrXzEsIGV4ZWN1dGVfdGFza18yCgpzZXNzaW9uID0gRmFpcmlub1Nlc3Npb24ocm9ib3QpCmV4ZWN1dGVfdGFza18xKHNlc3Npb24pCmV4ZWN1dGVfdGFza18yKHNlc3Npb24pCmBgYAoKYGV4ZWN1dGVfdGFza18xKClgIOWSjCBgZXhlY3V0ZV90YXNrXzIoKWAg5Zyo5byC5bi45pe25Lya6LCD55SoIGBTdG9wTW90aW9uYO+8jOS4jeS8muiHquWKqOW8oOeIquOAggoKIyMg6buY6K6k5Y+C5pWwCgotIOW3peWFt+WdkOagh++8mmB0b29sY29vcmQyYO+8jGB0b29sPTJgCi0g5bel5Lu25Z2Q5qCH77yaYHdvYmo9MGAKLSDmjqfliLblmajlhajlsYDpgJ/luqbvvJpgMzAlYAotIE1vdmVMIOaMh+S7pOmAn+W6pu+8mmAxMDAlYAotIOmmluasoeaKrOWNh+WKoOmAn+W6pu+8mmAxMDAlYAotIOWkueeIqumXreWQiOWKm++8mmA3MCVgCgojIyDlronlhajmo4Dmn6UKCi0g6LW354K55b+F6aG75Li6IGBBX21pZGRsZWAKLSDmo4Dmn6Xoh6rliqjmqKHlvI/jgIHkvb/og73jgIHmiqXorabjgIHmgKXlgZzjgIHlronlhajlgZzmraLjgIHnorDmkp7lkozpgJrkv6HnirbmgIEKLSDku7vliqEx6KaB5rGC5aS554iq6Zet5ZCICi0g5Lu75YqhMuimgeaxguWkueeIquW8oOW8gAotIOS7u+WKoTLpl63niKrlkI7jgIHpppbmrKHmiqzljYflkI7jgIHov5Tlm54gQSDlkI7lnYfmo4Dmn6XlpLnniKrkv53mjIHpl63lkIgKLSDku7vliqEx5byg54iq5ZCO5qOA5p+l5py65Zmo5Lq654q25oCB77yM5q2j5bi45omN6L+U5ZueIEEKLSDku7vkuIDmraXlpLHotKXnq4vljbPkuK3mraLvvIzkuI3oh6rliqjlvKDniKrjgIHkuI3nu6fnu63ov5Tlm54gQeOAgeS4jeaJp+ihjOS4i+S4gOS7u+WKoQotIOaXpeW/l+WIhuWIq+WGmeWFpSBgbG9ncy9iX3Rhc2sxXyouanNvbmAg5ZKMIGBsb2dzL2JfdGFzazJfKi5qc29uYAoK5b2T5YmN5aS554iq5L2N572u5Y+N6aaI5Y+q5pyJ5byg5byAL+mXreWQiOeKtuaAge+8jOeUtea1geWPjemmiOWPr+iDveS4uiBgMGDjgILlm6DmraTnqIvluo/og73lpJ/mo4DmtYvlpLnniKrmmK/lkKbph43mlrDlvKDlvIDvvIzkvYbml6Dms5XliKTmlq3lt6Xku7blnKjlpLnniKrkv53mjIHpl63lkIjml7bmmK/lkKbmu5Hlh7rvvJvlpoLpnIDmo4DmtYvor6Xmg4XlhrXvvIzlupTlop7liqDlt6Xku7blrZjlnKjkvKDmhJ/lmajjgIIKCiMjIOa1i+ivlQoKYGBgcG93ZXJzaGVsbApweXRob24gLW0gdW5pdHRlc3QgZGlzY292ZXIgLXMgdGVzdHMKYGBgDQo=
+# Fairino B槽任务1/任务2
+
+Fairino 机械臂 B 槽固定点位 LIN 搬运程序。程序直接读取 WebApp 当前示教点：
+
+```text
+A_middle
+B_1high
+B_3
+B_4low
+B_2
+```
+
+## 两个独立程序
+
+| 文件 | 作用 | 起点 | 终点 |
+|---|---|---|---|
+| `run_task1.py` | 生件放入生件槽 | A_middle，夹爪闭合夹持 | A_middle，夹爪张开 |
+| `run_task2.py` | 从生件槽取出工件 | A_middle，夹爪张开 | A_middle，夹爪闭合夹持 |
+
+每次运行只执行一个任务，结束后停在 `A_middle`，不会自动执行下一任务。
+
+## 手动运行
+
+```powershell
+cd C:\Users\Admin\Desktop\现场调试脚本
+D:\anaconda3\envs\agv\python.exe run_task1.py --sdk-root C:\Users\Admin\Desktop\现场调试脚本
+```
+
+```powershell
+D:\anaconda3\envs\agv\python.exe run_task2.py --sdk-root C:\Users\Admin\Desktop\现场调试脚本
+```
+
+也可以使用带任务选择的总入口：
+
+```powershell
+D:\anaconda3\envs\agv\python.exe run_b_cycle.py --task 1 --sdk-root C:\Users\Admin\Desktop\现场调试脚本
+D:\anaconda3\envs\agv\python.exe run_b_cycle.py --task 2 --sdk-root C:\Users\Admin\Desktop\现场调试脚本
+```
+
+## 信号调用
+
+后续信号控制系统可以直接复用核心函数：
+
+```python
+from run_b_cycle import FairinoSession, execute_task_1, execute_task_2
+
+session = FairinoSession(robot)
+execute_task_1(session)
+execute_task_2(session)
+```
+
+`execute_task_1()` 和 `execute_task_2()` 在异常时会调用 `StopMotion`，不会自动张爪。
+
+## 默认参数
+
+- 工具坐标：`toolcoord2`，`tool=2`
+- 工件坐标：`wobj=0`
+- 控制器全局速度：`30%`
+- MoveL 指令速度：`100%`
+- 首次抬升加速度：`100%`
+- 夹爪闭合力：`70%`
+
+## 安全检查
+
+- 起点必须为 `A_middle`
+- 检查自动模式、使能、报警、急停、安全停止、碰撞和通信状态
+- 任务1要求夹爪闭合
+- 任务2要求夹爪张开
+- 任务2闭爪后、首次抬升后、返回 A 后均检查夹爪保持闭合
+- 任务1张爪后检查机器人状态，正常才返回 A
+- 任一步失败立即中止，不自动张爪、不继续返回 A、不执行下一任务
+- 日志分别写入 `logs/b_task1_*.json` 和 `logs/b_task2_*.json`
+
+当前夹爪位置反馈只有张开/闭合状态，电流反馈可能为 `0`。因此程序能够检测夹爪是否重新张开，但无法判断工件在夹爪保持闭合时是否滑出；如需检测该情况，应增加工件存在传感器。
+
+## 测试
+
+```powershell
+python -m unittest discover -s tests
+```
