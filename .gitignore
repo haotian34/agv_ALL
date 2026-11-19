@@ -23,3 +23,6 @@ plane_results/
 plane_sessions/
 *_session*.jsonl
 *.log
+
+# Fairino task execution logs
+fairino_slot_tasks/logs/

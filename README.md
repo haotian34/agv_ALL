@@ -10,6 +10,7 @@
 | `initial_drafts/2026-11-18_camera_gripper_diagnostic_initial_draft/` | RealSense相机与夹爪联合诊断 |
 | `initial_drafts/2026-11-19_gripper_keyboard_control_initial_draft/` | 夹爪实时键盘开合控制 |
 | `b_slot_tasks/` | Fairino B槽任务1/任务2：独立放置、取件、LIN复现与安全日志 |
+| `fairino_slot_tasks/` | Fairino 车上 B/C 槽四个独立搬运任务节点、命令行入口和交接说明 |
 
 目录命名格式：
 
