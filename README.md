@@ -1,83 +1,17 @@
-# AGV_ALL：AGV 视觉与现场调试代码仓库
+# AGV_ALL
 
-> **重要：本仓库同时包含阶段性初稿和后续候选实现，但均不代表现场投产版本。**
->
-> 带日期、用途和 `initial_draft` 标记的目录保留早期方案，便于追溯，也不与后续实现争用同一文件名。仓库中的测试通过不等于真实设备、坐标精度或安全流程已经验收。
+本仓库归档AGV项目相关代码。
 
-## 当前候选实现
+| 目录 | 代码作用 |
+|---|---|
+| `plane_calibration/` | A4九点平面标定、会话保存、静态定位和报告 |
+| `initial_drafts/2026-11-18_handeye_3d_pipeline_initial_draft/` | 三维手眼标定、抓取偏移、预抓取和抓取测试 |
+| `initial_drafts/2026-11-18_plane_2d_pipeline_initial_draft/` | 早期A4九点平面标定、静态定位和报告 |
+| `initial_drafts/2026-11-18_camera_gripper_diagnostic_initial_draft/` | RealSense相机与夹爪联合诊断 |
+| `initial_drafts/2026-11-19_gripper_keyboard_control_initial_draft/` | 夹爪实时键盘开合控制 |
 
-`plane_calibration/` 是单站点、三套作业平面的后续实现，与 `initial_drafts/` 中的历史初稿独立存放，不覆盖、不替代其归档内容。
-
-| 目录 | 用途 | 当前状态 |
-|---|---|---|
-| `plane_calibration/` | A4 九点平面标定、可视化采点、会话保存、静态定位和报告生成 | 离线回归测试通过；真实 RealSense、Fairino 和现场平面尚未验收 |
-
-当前只配置三套视觉标定：
-
-- `warehouse_raw_1`：仓库第一行原件；
-- `warehouse_raw_2`：仓库第二行原件，拍照姿态与第一行相同、平面高度不同；
-- `machine_finished_pick`：加工区加工件抓取，使用独立拍照姿态。
-
-仓库成品行和车上固定放置区不纳入这三套视觉平面标定，后续分别采用逐槽传感器与示教位姿。
-
-这些脚本只读取 RealSense 图像和机械臂 TCP，不发送机械臂、夹爪或 AGV 运动命令。现场操作与安全门槛见 `plane_calibration/PLANE_CALIBRATION_GUIDE.md`。
-
-## 初稿目录
-
-| 目录 | 用途 | 当前状态 |
-|---|---|---|
-| `initial_drafts/2026-11-18_handeye_3d_pipeline_initial_draft/` | RealSense 眼在手上三维手眼标定、抓取偏移、预抓取与抓取安全门槛 | 离线研究和现场试验初稿；Z 精度未验收，禁止直接实抓 |
-| `initial_drafts/2026-11-18_plane_2d_pipeline_initial_draft/` | A4 九点平面标定、会话保存、静态定位和报告工具 | 代码初稿；现场平面尚未按该工具完成最终验收 |
-| `initial_drafts/2026-11-18_camera_gripper_diagnostic_initial_draft/` | RealSense 与夹爪键盘诊断，用于排查夹爪动作延迟 | 诊断初稿；机械臂本体和底盘不运动 |
-
-## 为什么这样命名
-
-- 目录中明确包含日期 `2026-11-18`；
-- 明确包含用途：`handeye_3d`、`plane_2d`、`camera_gripper`；
-- 明确包含 `initial_draft`，避免被误认为正式主版本；
-- 脚本保存在独立目录内，未来仓库根目录上传同名 `.py` 文件不会直接覆盖它们。
-
-## 后续代码上传约定
-
-后续代码请不要直接删除或移动本目录。建议采用以下任一方式：
-
-1. 新建 `initial_drafts/<日期>_<用途>_initial_draft/`；
-2. 新建 `modules/<功能名>/<版本>/`；
-3. 如果必须使用同名正式脚本，请放在新的正式目录或根目录，并在 README 中说明替代关系。
-
-后续平面标定改动应继续放在 `plane_calibration/`，不要改写或移动历史初稿目录。
-
-提交新代码时至少注明：日期、作者/来源、用途、是否已实机验证、是否允许控制真实设备，以及它与本初稿的关系。
-
-## 安全边界
-
-这些脚本包含机械臂、夹爪、相机或标定相关代码，其中部分脚本具备真实设备控制能力。**仓库中存在代码不代表已经通过现场安全验收。**
-
-- 不得直接用于自动生产；
-- 必须核对工具坐标、设备状态、碰撞范围和急停条件；
-- 涉及真实运动的脚本应先空载、低速、人工急停监护验证；
-- 任何视觉结果、标定结果和静态误差数据都必须单独验收，不能由代码测试通过替代。
-
-## 未上传的数据
-
-以下内容**没有上传**，应保留在受控的现场目录或私有存储中：
-
-- 手眼标定原始数据和处理结果；
-- 实际抓取偏移 `grasp_offset.json`；
-- 预抓取和抓取日志；
-- 平面标定会话、结果和现场图片；
-- RealSense 与夹爪诊断日志。
-
-仓库只归档可复用的代码、配置结构、测试和使用说明，避免混入现场标定数据和设备状态。
-
-## 环境提示
-
-现场车载环境：
+目录命名格式：
 
 ```text
-脚本目录：C:\Users\Admin\Desktop\现场调试脚本
-Python：  D:\anaconda3\envs\agv\python.exe
-机械臂：  192.168.192.160
+initial_drafts/<日期>_<用途>_initial_draft/
 ```
-
-Fairino Python SDK、`pyrealsense2` 和 OpenCV 需按现场电脑实际情况安装。每个实现或初稿目录下均有独立 README。
