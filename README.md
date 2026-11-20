@@ -1,3 +1,6 @@
+> Fairino 槽位任务的正式代码只保留在 `fairino_slot_tasks/`。旧版 B 槽实现 `b_slot_tasks/` 已归档到 `legacy` 分支，不再在 `main` 中维护，也不得作为现场启动入口。
+
+
 # AGV_ALL
 
 本仓库归档AGV项目相关代码。
@@ -9,7 +12,6 @@
 | `initial_drafts/2026-11-18_plane_2d_pipeline_initial_draft/` | 早期A4九点平面标定、静态定位和报告 |
 | `initial_drafts/2026-11-18_camera_gripper_diagnostic_initial_draft/` | RealSense相机与夹爪联合诊断 |
 | `initial_drafts/2026-11-19_gripper_keyboard_control_initial_draft/` | 夹爪实时键盘开合控制 |
-| `b_slot_tasks/` | Fairino B槽任务1/任务2：独立放置、取件、LIN复现与安全日志 |
 | `fairino_slot_tasks/` | Fairino 车上 B/C 槽四个独立搬运任务节点、命令行入口和交接说明 |
 
 目录命名格式：

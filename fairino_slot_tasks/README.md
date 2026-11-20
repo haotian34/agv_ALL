@@ -4,6 +4,26 @@
 
 每个程序只执行一个任务，结束后停在 `A_middle`，不会自动执行下一任务，不包含 AGV/底盘控制，也不包含 YOLO、视觉标定或槽位传感器逻辑。
 
+## 版本与归档
+
+`fairino_slot_tasks/` 是 Fairino 槽位任务的正式版本，也是 `main` 分支中的唯一任务入口。每个任务只保留一个文件：
+
+```text
+run_task1.py   生件放入 B 槽
+run_task2.py   从 B 槽取生件
+run_task3.py   成品放入 C 槽
+run_task4.py   从 C 槽取成品
+```
+
+旧版 `b_slot_tasks/` 只覆盖 B 槽任务1/任务2，并且依赖 `run_b_cycle.py`，已归档到 GitHub 的 `legacy` 分支：
+
+```text
+https://github.com/haotian34/agv_ALL/tree/legacy
+```
+
+归档分支只用于追溯历史，不用于现场部署，也不作为上层程序的导入路径。现场交接和后续电信号调用统一使用本目录。
+
+
 ## 1. 文件与任务
 
 | 文件 | 任务 | 起点夹爪 | 终点夹爪 |
