@@ -1,3 +1,4 @@
+> **旧版归档：** 本目录只保留在 `legacy` 分支，不再作为现场部署版本。正式版请使用 `main` 分支中的 `fairino_slot_tasks/`。
 # Fairino B槽任务1/任务2
 
 Fairino 机械臂 B 槽固定点位 LIN 搬运程序。程序直接读取 WebApp 当前示教点：
